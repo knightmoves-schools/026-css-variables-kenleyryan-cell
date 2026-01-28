@@ -7,21 +7,29 @@
           
             --wide-text-area: 200px;
             --narrow-text-area: 150px;
-            
+            --text-padding: 10px;
         }
         
         .narrow-text {
             width: var( --narrow-text-area );
             border-style: solid;
-            --text-padding: 10px;
+            padding: var(--text-padding);
+            narrow-text-size: 120px;
         }
 
         .wide-text {
             width: var( --wide-text-area );
             border-style: solid;
-            --text-padding: 10px;
+            padding: var(--text-padding);
         }
-    </style>
+   
+        @media(max-width: 150px ) {
+
+        }
+        wide-text-size: 100px;
+        narrow-text-size: 120px;
+   
+   </style>
 </head>
 
 <body>
